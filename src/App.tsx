@@ -1,4 +1,5 @@
 import React from 'react';
+import { Dashboard } from './components/Dashboard';
 import { Header } from './components/Header';
 import { GLobalStyle } from './styles/global';
 
@@ -7,7 +8,7 @@ export function App() {
   return (
     <div className="App">
       <Header/>
-     <h1>Hello word</h1>
+     <Dashboard/>
      <GLobalStyle></GLobalStyle>
     </div>
   );
