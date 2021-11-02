@@ -9,7 +9,7 @@ export function Header({onOpenNewTrasactionModal}:HeaderProps) {
   return (
     <Container>
       <Content>
-        <img src={logoImg} alt="" />
+        <img src={logoImg} alt="Logo" />
         <button type="button" onClick={onOpenNewTrasactionModal}>
           Nova transição
         </button>
