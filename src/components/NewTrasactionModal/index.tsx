@@ -1,6 +1,7 @@
 import { FormEvent, useState } from "react";
 import Modal from "react-modal"
 import { CloseImg, incomeImg, outcomeImg } from "../../assets";
+import { api } from "../../services/api";
 import { Container, RadioBox, TransactionTypetContainer } from "./styles";
 
 interface NewTrasactionModalProps{
@@ -17,12 +18,16 @@ export const NewTrasactionModal = ({isOpen,onRequestClose}:NewTrasactionModalPro
   
   function handleCreateNewTrasaction (event: FormEvent) {
     event.preventDefault();
-    console.log({
+
+    const data = {
       title,
       value,
       category,
       type
-    })
+    }
+
+    api.post('/transactions',data)
+
   }
   return ( 
     <Modal 
