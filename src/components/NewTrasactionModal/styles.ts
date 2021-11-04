@@ -3,7 +3,7 @@ import {darken, transparentize} from "polished"
 
 export const Container = styled.form`
   h2 {
-    color: var(--text-title);
+    color: ${(props) => props.theme.textTitle};
     font-size: 1.5rem;
     margin-bottom: 2rem;
   }
@@ -15,7 +15,7 @@ export const Container = styled.form`
     border-radius: 0.25rem;
 
      border: 1px solid #d7d7d7;
-     background: #e7e9ee;
+     background: ${(props) => props.theme.background};
 
      font-weight: 400;
      font-size: 1rem;
