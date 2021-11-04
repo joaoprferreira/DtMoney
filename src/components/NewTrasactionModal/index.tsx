@@ -12,7 +12,7 @@ interface NewTrasactionModalProps{
 
 export const NewTrasactionModal = ({isOpen,onRequestClose}:NewTrasactionModalProps) => {
   const [title,setTitle] = useState('')
-  const [amount, setAmount] = useState(0)
+  const [value,setValue] = useState(0)
   const [category,setCategory] = useState("")
   const [type, setType] = useState('deposit')
   
@@ -21,7 +21,7 @@ export const NewTrasactionModal = ({isOpen,onRequestClose}:NewTrasactionModalPro
 
     const data = {
       title,
-      amount,
+      value,
       category,
       type
     }
@@ -56,8 +56,8 @@ export const NewTrasactionModal = ({isOpen,onRequestClose}:NewTrasactionModalPro
         <input 
           type="number" 
           placeholder="Valor"
-          value={amount}
-          onChange={(event) => setAmount(Number(event.target.value))} 
+          value={value}
+          onChange={(event) => setValue(Number(event.target.value))} 
         />
 
         <TransactionTypetContainer >
