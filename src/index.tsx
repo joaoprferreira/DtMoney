@@ -15,7 +15,7 @@ createServer({
           id: 1,
           title: "Trabalhador autônomo",
           type: 'deposit',
-          categoty: 'Dev',
+          category: 'Dev',
           amount: 6000,
           createdAt: new Date('2021-02-12 09:00:00')
         },
@@ -23,7 +23,7 @@ createServer({
           id: 2,
           title: "Freelancer de website",
           type: 'withdraw',
-          categoty: 'Dev',
+          category: 'Dev',
           amount: 8000,
           createdAt: new Date('2021-02-12 09:00:00')
         }
